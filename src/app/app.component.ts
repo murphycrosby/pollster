@@ -38,6 +38,7 @@ export class AppComponent implements OnInit, OnDestroy {
   startPolling() {
     console.log('start');
     this.polling = true;
+    this.resetPolling();
 
     if (this.subscription == null) {
       this.subscription = interval(3000)
