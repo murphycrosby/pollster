@@ -1,0 +1,65 @@
+@import "primeng/resources/themes/omega/theme.css";
+@import "primeng/resources/primeng.min.css";
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height:100%;
+}
+
+body{
+    min-height: 100%;
+    font-family:Roboto,Trebuchet MS,Arial,Helvetica,sans-serif;
+    color:#404c51;
+    font-size:1em;
+    -webkit-font-smoothing:antialiased;
+}
+
+#blitz-app{
+  min-height: 100%;
+  height:100%;
+}
+
+#layout-wrapper{
+  min-height: 100%;
+}
+
+#layout-wrapper > div {
+  min-height: 100%;
+}
+
+#layout-sidebar{
+  position: relative;
+  background-color: #212F3D;
+}
+
+#layout-main{
+  position: relative;
+  background-color: #EBEDEF;
+  /* border: 1px solid maroon; */
+}
+
+#layout-sidebar.sidebarActive{
+  
+}
+#layout-sidebar.sidebarActive .sidebar-content{
+  display: block;
+}
+#layout-main.sidebarActive{
+  display: none;
+}
+
+@media screen and (max-width:40em){
+  .sidebar-content{
+    display:none;
+  }
+  .sidebar-top{
+    display:block;
+  }
+}
+
+@media screen and (min-width:40em){
+  .sidebar-top{
+    display:none;
+  }
+}

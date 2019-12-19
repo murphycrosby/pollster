@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    +1 517-541-4256
+  </h1>
+  <button type="button" class="btn btn-primary" [disabled]="polling === true" (click)="startPolling()">Start</button>
+  &nbsp;
+  <button type="button" class="btn btn-danger" [disabled]="polling !== true" (click)="closePolling()">Close</button>
+  &nbsp;
+  <button type="button" class="btn btn-success" (click)="resetPolling()">Reset Poll</button>
+</div>
+<div style="position: relative; margin: auto; height: 80vh; width: 80vw;">
+  <p-chart #chart type="bar" [data]="data" [responsive]="true"></p-chart>
+</div>
