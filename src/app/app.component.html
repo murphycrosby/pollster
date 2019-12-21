@@ -3,7 +3,7 @@
   <h1>
     +1 517-541-4256
   </h1>
-  <button type="button" class="btn btn-primary" [disabled]="polling === true" (click)="startPolling()">Start</button>
+  <button type="button" class="btn btn-primary" [disabled]="polling === true" (click)="startPolling(true)">Start</button>
   &nbsp;
   <button type="button" class="btn btn-danger" [disabled]="polling !== true" (click)="closePolling()">Close</button>
   &nbsp;

@@ -33,12 +33,16 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.startPolling(false);
   }
 
-  startPolling() {
+  startPolling(force: boolean) {
     console.log('start');
+
     this.polling = true;
-    this.resetPolling();
+    if (force === true) {
+      this.resetPolling();
+    }
 
     if (this.subscription == null) {
       this.subscription = interval(3000)
